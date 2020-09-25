@@ -1,9 +1,17 @@
 
+.high {
+  min-height:100%;
+  float:left;
+}
+
 .sidebar {
   color: white;
   background: green;
+  box-sizing: border-box;
   border:5px;
   border-color: black;
+  height: calc(100%);
+  padding-left: 15px;
 }
 
 .App {

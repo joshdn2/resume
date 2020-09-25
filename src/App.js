@@ -1,26 +1,26 @@
 import React from 'react'
 import logo from './logo.svg'
-import styles from './App.css'
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Row, Col} from 'react-bootstrap'
 
 function App() {
 
   return (
-    <Container>
-      <Row>
-        <Col md='2'>
-          <div className={styles.sidebar}>
+    <Container fluid noGutters className="high">
+      <Row style={{height:"100%"}}>
+        <Col md="3">
+          <div className="sidebar">
             <h2>
             Josh Danneman
             </h2>
           </div>
         </Col>
-        <Col md='10'>
-        </Col>
+        <Col md="9"></Col>
       </Row>
     </Container>
-  );
+    
+  )
 }
 
-export default App;
+export default App
