@@ -1,0 +1,45 @@
+.headers{
+    color: var(--contrast-color-bright-dark);
+}
+
+.headerSpace{
+    height:20%;
+}
+
+.profilepic{
+    width:100%;
+}
+
+.bracket{
+    margin-top:-45px;
+    height:200px;
+    line-height:200px;
+    font-size:180px;
+}
+
+.nameTitle{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:50px;
+    margin-top:12px;
+    color: var(--accent-color);
+}
+
+.lineBreakTop{
+    height:5px;
+    width:50%;
+    background-color: var(--contrast-color-bright-dark);
+}
+
+.lineBreakBottom{
+    height:5px;
+    width:30%;
+    background-color: var(--contrast-color-bright-dark);
+}
+
+.resumeReadButton{
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    width:150%;
+    height:150%;
+}

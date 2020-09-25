@@ -10,8 +10,25 @@
   float:right;
 }
 
+.notSidebarSmall{
+  flex: 1;
+  background: var(--high-contrast-light);
+  z-index: 1;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  float:right;
+}
+
 .logopic{
   width:var(--sidebar-width-opened);
+}
+
+.logopicSmall{
+  width:100%;
+  height:100%;
 }
 
 .sidebar {
@@ -25,6 +42,10 @@
   z-index: 2;
   pointer-events: none;
   text-align: center;
+}
+
+.sidebarSmall{
+  width:0px;
 }
 
 .linkSection {

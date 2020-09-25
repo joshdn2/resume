@@ -14,12 +14,14 @@ export default function App() {
     {name:'EXPERIENCE',link:'experience'},
     {name:'CONTACT',link:'contact'}
   ]
+let widthTest = false
+  if(window.innerWidth < 800) widthTest = true
 
   return (
     <>
-      <div className="sidebar">
-        <img src={myLogo} className="logopic"/>
-        {arrLinks.map((l) => {
+      <div className={widthTest? "sidebarSmall" : "sidebar"}>
+        <img src={myLogo} className={widthTest? "logopicSmall" : "logopic"}/>
+        {!widthTest && arrLinks.map((l) => {
           return (
             <div className="linkSection">
               <h5 className="linkText">{l.name}</h5>
@@ -27,7 +29,7 @@ export default function App() {
           )
         })}
       </div>
-      <div className="notSidebar">
+      <div className={widthTest? "notSidebarSmall" : "notSidebar"}>
         <NotSidebar/>
       </div>
     </>
