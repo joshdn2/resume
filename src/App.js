@@ -1,19 +1,22 @@
 import React from 'react'
 import logo from './logo.svg'
-import './App.css'
+import styles from './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Row, Col} from 'react-bootstrap'
 
 function App() {
-  
+
   return (
     <Container>
       <Row>
-        <Col>
+        <Col md='2'>
+          <div className={styles.sidebar}>
+            <h2>
+            Josh Danneman
+            </h2>
+          </div>
         </Col>
-      </Row>
-      <Row>
-        <Col>
+        <Col md='10'>
         </Col>
       </Row>
     </Container>

@@ -1,3 +1,11 @@
+
+.sidebar {
+  color: white;
+  background: green;
+  border:5px;
+  border-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +44,4 @@
     transform: rotate(360deg);
   }
 }
+
