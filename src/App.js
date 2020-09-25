@@ -4,6 +4,8 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Row, Col} from 'react-bootstrap'
 import myLogo from "./logopic.png"
+import NotSidebar from "./NotSidebar/NotSidebar"
+
 export default function App() {
 
   let arrLinks = [
@@ -12,6 +14,7 @@ export default function App() {
     {name:'EXPERIENCE',link:'experience'},
     {name:'CONTACT',link:'contact'}
   ]
+
   return (
     <>
       <div className="sidebar">
@@ -25,9 +28,7 @@ export default function App() {
         })}
       </div>
       <div className="notSidebar">
-        <Container>
-          Content goes here
-        </Container>
+        <NotSidebar/>
       </div>
     </>
   )
