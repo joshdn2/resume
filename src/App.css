@@ -1,18 +1,47 @@
+.notSidebar {
+  flex: 1;
+  background: var(--high-contrast-light);
+  z-index: 1;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(100% - var(--sidebar-width-opened));
+  float:right;
+}
 
+.logopic{
+  width:var(--sidebar-width-opened);
+}
 
 .sidebar {
   color: var(--very-light);
   background: var(--accent-color);
+  transition: .3s ease-in-out width;
   box-sizing: border-box;
-  height: 100%;
   position: fixed;
-  padding: 20px 32px 0px 20px;
+  width: var(--sidebar-width-opened);
+  height: calc(100%);
+  z-index: 2;
+  pointer-events: none;
+  text-align: center;
 }
 
-.middleBody{
-  background: var(--high-contrast-light);
-  height: 100vh;
-  padding-left: 15px;
+.linkSection {
+  height:calc((100% - var(--sidebar-width-opened)) / 4);
+  position: relative;
+}
+
+.linkSection:hover * {
+  background-color: var(--medium-contrast-dark) !important;
+}
+
+.linkText{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .App {
