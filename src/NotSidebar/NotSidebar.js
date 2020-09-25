@@ -26,6 +26,7 @@ export default function App() {
                         <h1 className="nameTitle"><strong>Josh<br/> Danneman</strong></h1>
                         <Col sm={0}>{ !widthTest && <div className="bracket">]</div>}</Col>
                     </Row>
+                    <br/>
                     <hr className='lineBreakTop'/>
                     <Row>
                         <Col md={2}></Col>
@@ -48,7 +49,7 @@ export default function App() {
             </Row>
             <br/><br/>
             <Row>
-                <Col md={2}></Col>
+                <Col md={1}></Col>
                 <Col md={3}>
                     <Button className="resumeReadButton">Click here to download my resume</Button>
                 </Col>
