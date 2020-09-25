@@ -1,16 +1,17 @@
 
-.high {
-  min-height:100%;
-  float:left;
-}
 
 .sidebar {
-  color: white;
-  background: green;
+  color: var(--very-light);
+  background: var(--accent-color);
   box-sizing: border-box;
-  border:5px;
-  border-color: black;
-  height: calc(100%);
+  height: 100%;
+  position: fixed;
+  padding: 20px 32px 0px 20px;
+}
+
+.middleBody{
+  background: var(--high-contrast-light);
+  height: 100vh;
   padding-left: 15px;
 }
 
