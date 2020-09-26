@@ -70,8 +70,8 @@ export default function NotSidebar({scrollPoint}) {
             </Row>
             <br/><br/><br/><br/><br/>
             <Row><hr className="lineBreak"/></Row>
-            <br/><br/><br/>
-            <Row id="about">
+            <br id="about"/><br/><br/>
+            <Row>
                 {/* this one has another picture and the about me section */}
                 <Col md={1}></Col>
                 <Col md={4} className='suitPicWrapper'>
