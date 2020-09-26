@@ -1,7 +1,6 @@
 .notSidebar {
   flex: 1;
   background: var(--high-contrast-light);
-  z-index: 1;
   min-width: 0px;
   display: flex;
   flex-direction: column;
@@ -13,7 +12,6 @@
 .notSidebarSmall{
   flex: 1;
   background: var(--high-contrast-light);
-  z-index: 1;
   min-width: 0px;
   display: flex;
   flex-direction: column;
@@ -34,15 +32,12 @@
 .sidebar {
   color: var(--very-light);
   background-color: var(--accent-color);
-  transition: .3s ease-in-out width;
   box-sizing: border-box;
   position: fixed;
   width: var(--sidebar-width-opened);
   height: calc(100%);
   z-index: 2;
-  pointer-events: none;
   text-align: center;
-  z-index:1;
 }
 
 .sidebarSmall{
@@ -54,16 +49,12 @@
   background-color: var(--accent-color);
   width:100%;
   position: relative;
+  z-index: 3;
 }
 
-#introduction:hover{
-  cursor:pointer;
-}
-
-a:hover {
-  opacity:0.5;
+.linkSection:hover{
   cursor: pointer;
-  z-index:20;
+  background-color: var(--medium-contrast-dark);
 }
 
 .linkText{

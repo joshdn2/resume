@@ -2,10 +2,11 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Button} from 'react-bootstrap'
 import myLogo from "./logopic.png"
 import NotSidebar from "./NotSidebar/NotSidebar"
 import { HelpBlock } from 'react-bootstrap'
+import { directive } from '@babel/types'
 
 export default function App() {
 
@@ -25,7 +26,7 @@ let widthTest = false
         {!widthTest && arrLinks.map((l) => {
           return (
             <div id={l.link} className="linkSection" >
-              <a><h5 className="linkText">{l.name}</h5></a>
+              <h5 className="linkText">{l.name}</h5>
             </div>
           )
         })}

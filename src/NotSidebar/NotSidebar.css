@@ -37,9 +37,17 @@
     background-color: var(--contrast-color-bright-dark);
 }
 
+.namePic{
+    width:100%;
+}
+
 .resumeReadButton{
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     width:150%;
     height:180%;
+}
+
+.resumeReadButton:hover {
+    background-color: var(--medium-contrast-dark);
 }

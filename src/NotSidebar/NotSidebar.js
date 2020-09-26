@@ -2,6 +2,8 @@ import React from 'react'
 import './NotSidebar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import profPic from "../DannemanJoshua_Online.jpg"
+import namePic from "../picresume.png"
+import resume from "../Josh_Danneman_Resume.pdf"
 import {Container, Row, Col, Button} from 'react-bootstrap'
 
 export default function App() {
@@ -9,6 +11,7 @@ export default function App() {
     let arrSkills = [
         'ReactJS','UX Research','Database Design','Node.js','Systems Analysis','SQL'
     ]
+
 
     let widthTest = false
     if(window.innerWidth < 1048) widthTest = true
@@ -21,10 +24,10 @@ export default function App() {
                 <Col md={6}className="headers">
                     <h3 style={{marginTop:"20px"}}>Hello, I'm </h3>
                     <Row>
-                        <Col sm={0}>{ !widthTest && <div className="bracket">[</div>}</Col>
-                        
+                        <img src={namePic} className="namePic"></img>
+                        {/* <Col>{ !widthTest && <div className="bracket">[</div>}</Col>
                         <h1 className="nameTitle"><strong>Josh<br/> Danneman</strong></h1>
-                        <Col sm={0}>{ !widthTest && <div className="bracket">]</div>}</Col>
+                        <Col>{ !widthTest && <div className="bracket">]</div>}</Col> */}
                     </Row>
                     <br/>
                     <hr className='lineBreakTop'/>
@@ -47,15 +50,19 @@ export default function App() {
                 </Col>
                 <Col md={1}></Col>
             </Row>
-            <br/><br/>
+            <br/>
             <Row>
                 <Col md={1}></Col>
                 <Col md={3}>
-                    <Button className="resumeReadButton">Click here to download my resume</Button>
+                    <a href={resume} download>
+                        <Button className="resumeReadButton">
+                            <div style={{verticalAlign:"middle"}}>Download My Resume</div>
+                        </Button>
+                    </a>
                 </Col>
                 <Col md={2}></Col>
                 <Col md={3}>
-                    <Button className="resumeReadButton">Click here to read it below</Button>
+                    <Button className="resumeReadButton">Read More</Button>
                 </Col>
                 <Col md={2}></Col>
             </Row>
