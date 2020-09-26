@@ -1,9 +1,10 @@
 import React from 'react'
 import './NotSidebar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import profPic from "../DannemanJoshua_Online.jpg"
-import namePic from "../picresume.png"
-import resume from "../Josh_Danneman_Resume.pdf"
+import profPic from "../media/DannemanJoshua_Online.jpg"
+import namePic from "../media/picresume.png"
+import resume from "../media/Josh_Danneman_Resume.pdf"
+import blackWhite from '../media/suitNoBackground.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 
 export default function App() {
@@ -17,7 +18,7 @@ export default function App() {
     if(window.innerWidth < 1048) widthTest = true
 
     return(
-        <Container>
+        <Container className='fullContainer'>
             <Row className="headerSpace"></Row>
             <Row>
                 <Col md={1}></Col>
@@ -65,6 +66,44 @@ export default function App() {
                     <Button className="resumeReadButton">Read More</Button>
                 </Col>
                 <Col md={2}></Col>
+            </Row>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Row><hr className="lineBreak"/></Row>
+            <br/>
+            <br/>
+            <br/>
+            <Row>
+                {/* this one has another picture and the about me section */}
+                <Col md={1}></Col>
+                <Col md={4} className='suitPicWrapper'>
+                    <img src={blackWhite} className='suitPic'/>
+                </Col>
+                {/* <Col md={1}></Col> */}
+                <Col md={6}>
+                    <h1 className="nameTitle"><strong>About Me</strong></h1>
+                    <br/>
+                    <p className='aboutMeStyle'>
+                        I'm a full-stack developer and UX designer and researcher in the making. 
+                        <br/><br/>
+                        I am currently studying information systems at the Brigham Young University Marriott School of Management. 
+                        <br/><br/>
+                        I'll graduate in December 2021 with a Master's degree in Information Systems Management, 
+                        with an emphasis in Software Development. 
+                        <br/><br/>
+                        I am currently working as a full-stack software developer and UX researcher in the BYU Physics and Astronomy department. 
+                        <br/><br/>
+
+                    </p>
+                </Col>
+                <Col md={1}></Col>
+            </Row>
+            
+            <Row className='colorRow'>
+                <br/><br/><br/><br/><br/>
             </Row>
         </Container>
     )

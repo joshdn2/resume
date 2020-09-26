@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Row, Col, Button} from 'react-bootstrap'
-import myLogo from "./logopic.png"
+import myLogo from "./media/logopic.png"
 import NotSidebar from "./NotSidebar/NotSidebar"
 import { HelpBlock } from 'react-bootstrap'
 import { directive } from '@babel/types'
@@ -20,7 +20,7 @@ let widthTest = false
   if(window.innerWidth < 800) widthTest = true
 
   return (
-    <>
+    <div className='backgroundColor'>
       <div className={widthTest? "sidebarSmall" : "sidebar"}>
         <img src={myLogo} className={widthTest? "logopicSmall" : "logopic"}/>
         {!widthTest && arrLinks.map((l) => {
@@ -34,6 +34,6 @@ let widthTest = false
       <div className={widthTest? "notSidebarSmall" : "notSidebar"}>
         <NotSidebar/>
       </div>
-    </>
+    </div>
   )
 }

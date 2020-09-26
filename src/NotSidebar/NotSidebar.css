@@ -1,9 +1,13 @@
+.fullContainer{
+    background-color: var(--high-contrast-light);
+}
+
 .headers{
     color: var(--contrast-color-bright-dark);
 }
 
 .headerSpace{
-    height:15%;
+    height:80px;
 }
 
 .profilepic{
@@ -31,6 +35,12 @@
     background-color: var(--contrast-color-bright-dark);
 }
 
+.lineBreak{
+    height:5px;
+    width:80%;
+    background-color: var(--contrast-color-bright-dark);
+}
+
 .lineBreakBottom{
     height:5px;
     width:30%;
@@ -50,4 +60,24 @@
 
 .resumeReadButton:hover {
     background-color: var(--medium-contrast-dark);
+}
+
+.suitPicWrapper{
+    position: relative;
+}
+
+.suitPic{
+    /* width:100%; */
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 520px;
+}
+
+.colorRow{
+    background-color: var(--contrast-color-dull);
+}
+
+.aboutMeStyle{
+    color:var(--high-contrast-dark);
 }

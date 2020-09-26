@@ -9,6 +9,10 @@
   float:right;
 }
 
+.backgroundColor{
+  background-color: var(--high-contrast-light);
+}
+
 .notSidebarSmall{
   flex: 1;
   background: var(--high-contrast-light);
