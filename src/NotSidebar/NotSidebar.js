@@ -3,10 +3,10 @@ import './NotSidebar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import profPic from "../media/DannemanJoshua_Online.jpg"
 import namePic from "../media/picresume.png"
+import timelinePoint from "../media/timelinePoint.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
-import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 export default function NotSidebar({scrollPoint}) {
 
@@ -69,9 +69,7 @@ export default function NotSidebar({scrollPoint}) {
                 <Col md={2}></Col>
             </Row>
             <br/><br/><br/><br/><br/>
-            <Row><hr className="lineBreak"/>
-                {/* set anchor here for about me section */}
-            </Row>
+            <Row><hr className="lineBreak"/></Row>
             <br/><br/><br/>
             <Row id="about">
                 {/* this one has another picture and the about me section */}
@@ -129,9 +127,33 @@ export default function NotSidebar({scrollPoint}) {
                     <br/>
                 </Col>
             </Row>
+            <br/>
             <Row>
-                {/* this section is for the Experience timeline */}
+                <Col>
+                    {/* this section is for the Experience timeline */}
+                    <h1 id='experience' className="nameTitle" style={{textAlign:'center', marginBottom:'30px'}}>
+                        <strong>Experience</strong>
+                    </h1>
+                </Col>
             </Row>
+            <Row>
+                <Col md={5}></Col>
+                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={5}></Col>
+                <Col md={5}></Col>
+                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={5}></Col>
+                <Col md={5}></Col>
+                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={5}></Col>
+                <Col md={5}></Col>
+                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={5}></Col>
+                <Col md={5}></Col>
+                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={5}></Col>
+            </Row>
+            <br/><br/>
         </Container>
     )
 }
