@@ -6,8 +6,9 @@ import namePic from "../media/picresume.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
 
-export default function App() {
+export default function NotSidebar({scrollPoint}) {
 
     let arrSkills = [
         'ReactJS','UX Research','Database Design','Node.js','Systems Analysis','SQL'
@@ -19,7 +20,7 @@ export default function App() {
 
     return(
         <Container className='fullContainer'>
-            <Row className="headerSpace"></Row>
+            <Row className="headerSpace" id='introduction'></Row>
             <Row>
                 <Col md={1}></Col>
                 <Col md={6}className="headers">
@@ -63,20 +64,16 @@ export default function App() {
                 </Col>
                 <Col md={2}></Col>
                 <Col md={3}>
-                    <Button className="resumeReadButton">Read More</Button>
+                    <Button className="resumeReadButton" onClick={() => scrollPoint('about')}>Read More</Button>
                 </Col>
                 <Col md={2}></Col>
             </Row>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <Row><hr className="lineBreak"/></Row>
-            <br/>
-            <br/>
-            <br/>
-            <Row>
+            <br/><br/><br/><br/><br/>
+            <Row><hr className="lineBreak"/>
+                {/* set anchor here for about me section */}
+            </Row>
+            <br/><br/><br/>
+            <Row id="about">
                 {/* this one has another picture and the about me section */}
                 <Col md={1}></Col>
                 <Col md={4} className='suitPicWrapper'>
@@ -103,7 +100,37 @@ export default function App() {
             </Row>
             
             <Row className='colorRow'>
-                <br/><br/><br/><br/><br/>
+                {/* This is the section with a few highlighted skills */}
+                <Col><br/>
+                    <Row className="justify-content-md-center">
+                        <Col md={3} className='centerTitle'><h2 className="nameSubTitle"><strong>Top Skills</strong></h2></Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>ReactJS</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>Database Design</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>UX Research</div></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>SQL</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>Agile</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>Node.js</div></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/>
+                    <br/>
+                </Col>
+            </Row>
+            <Row>
+                {/* this section is for the Experience timeline */}
             </Row>
         </Container>
     )

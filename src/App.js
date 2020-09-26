@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -7,17 +7,26 @@ import myLogo from "./media/logopic.png"
 import NotSidebar from "./NotSidebar/NotSidebar"
 import { HelpBlock } from 'react-bootstrap'
 import { directive } from '@babel/types'
+import { HashLink as Link } from 'react-router-hash-link'
 
 export default function App() {
+  const [anchorTarget, setAnchorTarget] = useState(null)
 
   let arrLinks = [
-    {name:'INTRODUCTION',link:'introduction'},
-    {name:'ABOUT ME',link:'about-me'},
-    {name:'EXPERIENCE',link:'experience'},
-    {name:'CONTACT',link:'contact'}
+    {name:'INTRODUCTION', link:'introduction'},
+    {name:'ABOUT ME', link:'about'},
+    {name:'EXPERIENCE', link:'experience'},
+    {name:'CONTACT', link:'contact'}
   ]
 let widthTest = false
   if(window.innerWidth < 800) widthTest = true
+
+  const scrollPoint = (link) => {
+    console.log(link)
+    let el = document.getElementById(link)
+    console.log(el)
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <div className='backgroundColor'>
@@ -25,14 +34,14 @@ let widthTest = false
         <img src={myLogo} className={widthTest? "logopicSmall" : "logopic"}/>
         {!widthTest && arrLinks.map((l) => {
           return (
-            <div id={l.link} className="linkSection" >
+            <div className="linkSection" onClick={() => scrollPoint(l.link)}>
               <h5 className="linkText">{l.name}</h5>
             </div>
           )
         })}
       </div>
       <div className={widthTest? "notSidebarSmall" : "notSidebar"}>
-        <NotSidebar/>
+        <NotSidebar scrollPoint={scrollPoint}/>
       </div>
     </div>
   )

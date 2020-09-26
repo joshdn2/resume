@@ -21,6 +21,24 @@
     font-size:180px;
 }
 
+.nameSubTitle{
+    color: var(--high-contrast-light);
+    font-size:40px;
+}
+
+.centerTitle{
+    text-align: center;
+}
+
+.skillBox{
+    height:50px;
+    line-height: 50px;
+    background-color: var(--high-contrast-light);
+    color: var(--contrast-color-dull);
+    border-radius:5px;
+    font-weight:bold;
+}
+
 .nameTitle{
     margin-left:auto;
     margin-right:auto;
