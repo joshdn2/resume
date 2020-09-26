@@ -42,6 +42,7 @@
   z-index: 2;
   pointer-events: none;
   text-align: center;
+  z-index:1;
 }
 
 .sidebarSmall{
@@ -50,11 +51,19 @@
 
 .linkSection {
   height:calc((100% - var(--sidebar-width-opened)) / 4);
+  background-color: var(--accent-color);
+  width:100%;
   position: relative;
 }
 
-.linkSection:hover {
-  background-color: var(--medium-contrast-dark);
+#introduction:hover{
+  cursor:pointer;
+}
+
+a:hover {
+  opacity:0.5;
+  cursor: pointer;
+  z-index:20;
 }
 
 .linkText{
