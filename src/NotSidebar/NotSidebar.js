@@ -145,26 +145,23 @@ export default function NotSidebar({scrollPoint}) {
                 </Col>
             </Row>
             <Row>
-                <Col md={1}></Col>
-                <Col md={4} className="centerTitleLeft"><h2>Mozenda</h2></Col>
-                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={4} className="experienceTextBubble" ><img src={experienceText}></img></Col>
-                <Col md={1}></Col>
-                <Col md={1}></Col>
-                <Col md={4} className="experienceTextBubble" ><img src={experienceTextLeft}></img></Col>
-                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={4} className="centerTitleRight"><h2>BYU Information Systems Core</h2></Col>
-                <Col md={1}></Col>
-                <Col md={1}></Col>
-                <Col md={4} className="centerTitleLeft"><h2>BYU Physics and Astronomy Dept</h2></Col>
-                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={4} className="experienceTextBubble" ><img src={experienceText}></img></Col>
-                <Col md={1}></Col>
-                <Col md={1}></Col>
-                <Col md={4} className="experienceTextBubble" ><img src={experienceTextLeft}></img></Col>
-                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={4} className="centerTitleRight"><h2>Master's of Management Information Systems</h2></Col>
-                <Col md={1}></Col>
+            {/* https://www.npmjs.com/package/react-vertical-timeline-component */}
+                <VerticalTimeline>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        date="2018-2020"
+                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        icon=""
+                    >
+                        <h3 className="vertical-timeline-element-title">Mozenda</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Pleasant Grove, UT</h4>
+                        <p>
+                        LOrem ii[sum asiudlfaindlfalskdjflk a;oiwej ;foaiejr;oifj ;eroksflekrf]
+                        </p>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
             </Row>
             <br/><br/><br/><br/>
             <Row><hr className="lineBreak"/></Row>
