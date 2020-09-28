@@ -152,14 +152,89 @@ export default function NotSidebar({scrollPoint}) {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#10449E', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
-                        date="2018-2020"
+                        date="April 2018 - August 2020"
                         dateClassName="timelineDate"
                         iconStyle={{ background: '#10449E', color: '#fff' }}
                         icon=""
                     >
-                        <h3 className="vertical-timeline-element-title">Mozenda</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Pleasant Grove, UT</h4>
-                        <p>
+                        <h3 className="vertical-timeline-element-title bubbleTitle">Mozenda</h3>
+                        <h5 className="vertical-timeline-element-subtitle bubbleTitle">Pleasant Grove, UT</h5>
+                        <p className="bubbleTitle">
+                            Special Projects Manager (Jan-Aug 2020)
+                            <br/>
+                            - Designed and built new projects including web crawlers, dashboard automations, and script-heavy scraping agents
+                            <br/>
+                            <br/>
+                            Services Project Lead (Mar-Dec 2019)
+                            <br/>
+                            - Scraped, wrangled, and delivered data, servicing contracts worth over $200k in total
+                            <br/>
+                            <br/>
+                            Customer Service Team (Apr 2018-Feb 2019)
+                            <br/>
+                            - Led the team in average cases solved per week
+                            <br/>
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#10449E', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
+                        date="August 2019 - April 2020"
+                        dateClassName="timelineDate"
+                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        icon=""
+                    >
+                        <h3 className="vertical-timeline-element-title bubbleTitle">Information Systems Core</h3>
+                        <h5 className="vertical-timeline-element-subtitle bubbleTitle">Brigham Young University</h5>
+                        <p className="bubbleTitle">
+                            Material included:
+                            <br/>
+                            - Programming (React, Node, C# MVC, Python DRF) 
+                            <br/>
+                            - Databases (design, normalization, SQL)
+                            <br/>
+                            - Management (project, product)
+                            <br/>
+                            - Systems (analysis and design, security, networks, AWS)
+                            <br/>
+                            - Analytics (Python, Azure MLS)
+                            <br/>
+                            <br/>
+                            Integrative final projects consisted of:
+                            <br/>
+                            - Business systems redesign, MSSQL database normalization, and C# MVC website prototype
+                            <br/>
+                            - Predictive data pipeline creation, website with React frontend, Python DRF backend, PostgreSQL db, hosted on AWS
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#10449E', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
+                        date="April 2020 - Present"
+                        dateClassName="timelineDate"
+                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        icon=""
+                    >
+                        <h3 className="vertical-timeline-element-title bubbleTitle">Physics and Astronomy Department</h3>
+                        <h5 className="vertical-timeline-element-subtitle bubbleTitle">Brigham Young University</h5>
+                        <p className="bubbleTitle">
+                        LOrem ii[sum asiudlfaindlfalskdjflk a;oiwej ;foaiejr;oifj ;eroksflekrf]
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#10449E', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
+                        date="August 2020 - Present"
+                        dateClassName="timelineDate"
+                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        icon=""
+                    >
+                        <h3 className="vertical-timeline-element-title bubbleTitle">Master's of Information Systems Management</h3>
+                        <h5 className="vertical-timeline-element-subtitle bubbleTitle">Brigham Young University</h5>
+                        <p className="bubbleTitle">
                         LOrem ii[sum asiudlfaindlfalskdjflk a;oiwej ;foaiejr;oifj ;eroksflekrf]
                         </p>
                     </VerticalTimelineElement>

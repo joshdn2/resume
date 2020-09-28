@@ -146,3 +146,7 @@
 .timelineDate{
     color:var(--contrast-color-dull);
 }
+
+.bubbleTitle{
+    color:var(--high-contrast-light);
+}
