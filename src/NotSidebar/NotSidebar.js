@@ -7,9 +7,13 @@ import timelinePoint from "../media/timelinePoint.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
 import email from '../media/email.png'
+import experienceText from '../media/experienceText.png'
+import experienceTextLeft from '../media/experienceTextleft.png'
 import phone from '../media/phone.png'
 import linkedin from '../media/linkedin.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
 export default function NotSidebar({scrollPoint}) {
 
@@ -67,7 +71,7 @@ export default function NotSidebar({scrollPoint}) {
                 </Col>
                 <Col md={2}></Col>
                 <Col md={3}>
-                    <Button className="resumeReadButton" onClick={() => scrollPoint('about')}>Read More</Button>
+                    <Button className="resumeReadButton" onClick={() => scrollPoint('about')}>Read More (mobile version coming soon)</Button>
                 </Col>
                 <Col md={2}></Col>
             </Row>
@@ -135,26 +139,32 @@ export default function NotSidebar({scrollPoint}) {
                 <Col>
                     {/* this section is for the Experience timeline */}
                     <h1 id='experience' className="nameTitle" style={{textAlign:'center', marginBottom:'30px'}}>
+                        <br/>
                         <strong>Experience</strong>
                     </h1>
                 </Col>
             </Row>
             <Row>
-                <Col md={5}></Col>
-                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={5}></Col>
-                <Col md={5}></Col>
-                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={5}></Col>
-                <Col md={5}></Col>
-                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={5}></Col>
-                <Col md={5}></Col>
-                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={5}></Col>
-                <Col md={5}></Col>
-                <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
-                <Col md={5}></Col>
+                <Col md={1}></Col>
+                <Col md={4} className="centerTitleLeft"><h2>Mozenda</h2></Col>
+                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={4} className="experienceTextBubble" ><img src={experienceText}></img></Col>
+                <Col md={1}></Col>
+                <Col md={1}></Col>
+                <Col md={4} className="experienceTextBubble" ><img src={experienceTextLeft}></img></Col>
+                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={4} className="centerTitleRight"><h2>BYU Information Systems Core</h2></Col>
+                <Col md={1}></Col>
+                <Col md={1}></Col>
+                <Col md={4} className="centerTitleLeft"><h2>BYU Physics and Astronomy Dept</h2></Col>
+                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={4} className="experienceTextBubble" ><img src={experienceText}></img></Col>
+                <Col md={1}></Col>
+                <Col md={1}></Col>
+                <Col md={4} className="experienceTextBubble" ><img src={experienceTextLeft}></img></Col>
+                <Col md={2} className="centertimeline" style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
+                <Col md={4} className="centerTitleRight"><h2>Master's of Management Information Systems</h2></Col>
+                <Col md={1}></Col>
             </Row>
             <br/><br/><br/><br/>
             <Row><hr className="lineBreak"/></Row>

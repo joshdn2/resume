@@ -13,6 +13,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.1.0",
     "react-scripts": "3.4.0",
+    "react-vertical-timeline-component": "^3.0.2",
     "typeface-montserrat": "0.0.75"
   },
   "scripts": {

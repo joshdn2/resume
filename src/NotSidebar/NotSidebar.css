@@ -116,3 +116,29 @@
 .aboutMeStyle{
     color:var(--high-contrast-dark);
 }
+
+.centerTitleLeft{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+    color:var(--high-contrast-dark);
+}
+
+.centerTitleRight{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    color:var(--high-contrast-dark);
+}
+
+.experienceTextBubble{
+    padding-left:0px;
+    padding-right:0px;
+    width:100%;
+}
+
+.centertimeline{
+    padding-left:0px;
+    padding-right:0px;
+    height:100%;
+}
