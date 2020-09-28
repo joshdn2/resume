@@ -7,6 +7,7 @@ import timelinePoint from "../media/timelinePoint.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
 import email from '../media/email.png'
+import mozenda from '../media/mozenda.png'
 import experienceText from '../media/experienceText.png'
 import experienceTextLeft from '../media/experienceTextleft.png'
 import phone from '../media/phone.png'
@@ -149,10 +150,11 @@ export default function NotSidebar({scrollPoint}) {
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: '#10449E', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="2018-2020"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        dateClassName="timelineDate"
+                        iconStyle={{ background: '#10449E', color: '#fff' }}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title">Mozenda</h3>

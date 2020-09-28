@@ -142,3 +142,7 @@
     padding-right:0px;
     height:100%;
 }
+
+.timelineDate{
+    color:var(--contrast-color-dull);
+}
