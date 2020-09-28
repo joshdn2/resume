@@ -220,7 +220,21 @@ export default function NotSidebar({scrollPoint}) {
                         <h3 className="vertical-timeline-element-title bubbleTitle">Physics and Astronomy Department</h3>
                         <h5 className="vertical-timeline-element-subtitle bubbleTitle">Brigham Young University</h5>
                         <p className="bubbleTitle">
-                        LOrem ii[sum asiudlfaindlfalskdjflk a;oiwej ;foaiejr;oifj ;eroksflekrf]
+                        Full-Stack Developer & UX Designer
+                        <br/>
+                        <br/>
+                        Technology used:
+                        <br/>
+                        - React, Node, PostgreSQL, Docker, Python Microservices
+                        <br/>
+                        <br/>
+                        Leadership on the Dev Team:
+                        <br/>
+                        - Driving Agile sprints
+                        <br/>
+                        - Managing task management processes
+                        <br/>
+                        - Leading UX design process
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -235,7 +249,20 @@ export default function NotSidebar({scrollPoint}) {
                         <h3 className="vertical-timeline-element-title bubbleTitle">Master's of Information Systems Management</h3>
                         <h5 className="vertical-timeline-element-subtitle bubbleTitle">Brigham Young University</h5>
                         <p className="bubbleTitle">
-                        LOrem ii[sum asiudlfaindlfalskdjflk a;oiwej ;foaiejr;oifj ;eroksflekrf]
+                            Current Material Includes:
+                            <br/>
+                            - UX Design (user-centered design, leadership principles)
+                            <br/>
+                            - Cybersecurity (penetration testing, data protection, attack prevention, threat modeling)
+                            <br/>
+                            - Advanced Predictive Analytics (machine learning algorithms, clustering)
+                            <br/>
+                            - Enterprise Infrastructure (virtualization, containerization, devOps, storage)
+                            <br/>
+                            <br/>
+                            Capstone Project: 
+                            <br/>
+                            - Productivity Management for software developers
                         </p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
