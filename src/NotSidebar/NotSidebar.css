@@ -26,6 +26,15 @@
     font-size:40px;
 }
 
+.contactIcon{
+    width:100%;
+}
+
+.contactText{
+    font-style: bolder;
+    color:var(--medium-contrast-light);
+}
+
 .centerTitle{
     text-align: center;
 }
@@ -43,6 +52,14 @@
     margin-left:auto;
     margin-right:auto;
     font-size:50px;
+    margin-top:12px;
+    color: var(--accent-color);
+}
+
+.nameTitleMotto{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:25px;
     margin-top:12px;
     color: var(--accent-color);
 }

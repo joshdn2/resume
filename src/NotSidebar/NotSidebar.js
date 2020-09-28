@@ -6,6 +6,9 @@ import namePic from "../media/picresume.png"
 import timelinePoint from "../media/timelinePoint.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
+import email from '../media/email.png'
+import phone from '../media/phone.png'
+import linkedin from '../media/linkedin.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 
 export default function NotSidebar({scrollPoint}) {
@@ -91,7 +94,7 @@ export default function NotSidebar({scrollPoint}) {
                         <br/><br/>
                         I am currently working as a full-stack software developer and UX researcher in the BYU Physics and Astronomy department. 
                         <br/><br/>
-
+                        My motto: Do good recklessly.
                     </p>
                 </Col>
                 <Col md={1}></Col>
@@ -153,7 +156,48 @@ export default function NotSidebar({scrollPoint}) {
                 <Col md={2} style={{textAlign:'center'}}><img src={timelinePoint}></img></Col>
                 <Col md={5}></Col>
             </Row>
+            <br/><br/><br/><br/>
+            <Row><hr className="lineBreak"/></Row>
             <br/><br/>
+            <Row>
+                <Col>
+                    {/* this section is for the Contact Me section */}
+                    <h1 id='contact' className="nameTitle" style={{textAlign:'center', marginBottom:'30px'}}>
+                        <strong>Contact Me</strong>
+                    </h1>
+                </Col>
+            </Row>
+            <br/><br/>
+            <Row className='colorRow'>
+                {/* This is the section with a few highlighted skills */}
+                <Col>
+                    <br/><br/><br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'>
+                            <img src={email} className='contactIcon'/>
+                            <div className='contactText'><strong>joshdn2@gmail.com</strong></div>
+                        </Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'>
+                            <img src={phone} className='contactIcon'/>
+                            <div className='contactText'><strong>770-943-8344</strong></div>
+                        </Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><a href='https://www.linkedin.com/in/josh-danneman/' target="_blank"><img src={linkedin} className='contactIcon'/></a></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/><br/><br/>
+                </Col>
+            </Row>
+            <br/>
+            <Row>
+                <Col>
+                    <h3 className="nameTitleMotto" style={{textAlign:'center', marginBottom:'30px'}}>
+                        <strong>Do Good Recklessly!</strong>
+                    </h3>
+                </Col>
+            </Row>
         </Container>
     )
 }
