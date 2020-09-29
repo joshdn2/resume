@@ -122,10 +122,16 @@
 
 .colorRow{
     background-color: var(--contrast-color-dull);
+    border-left:solid;
+    border-left-color: var(--high-contrast-light);
+    border-left-width: 2px;
 }
 
 .colorRow2{
     background-color: var(--accent-color);
+    border-left:solid;
+    border-left-color: var(--high-contrast-light);
+    border-left-width: 2px;
 }
 
 .aboutMeStyle{

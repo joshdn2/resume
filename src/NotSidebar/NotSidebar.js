@@ -191,7 +191,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="April 2018 - August 2020"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#01A263', color: '#fff'}}
+                        iconStyle={{ background: '#10449E', color: '#fff'}}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Mozenda</h3>
@@ -251,7 +251,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="April 2020 - Present"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#01A263', color: '#fff' }}
+                        iconStyle={{ background: '#10449E', color: '#fff' }}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Physics and Astronomy Department</h3>
