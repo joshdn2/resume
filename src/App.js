@@ -31,7 +31,7 @@ let widthTest = false
   return (
     <div className='backgroundColor'>
       <div className={widthTest? "sidebarSmall" : "sidebar"}>
-        <img src={myLogo} className={widthTest? "logopicSmall" : "logopic"}/>
+        <img src={myLogo} className={widthTest? "logopicSmall" : "logopic"} onClick={() => scrollPoint('introduction')}/>
         {!widthTest && arrLinks.map((l) => {
           return (
             <div className="linkSection" onClick={() => scrollPoint(l.link)}>

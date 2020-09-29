@@ -7,7 +7,7 @@
 }
 
 .headerSpace{
-    height:80px;
+    height:70px;
 }
 
 .profilepic{
@@ -44,6 +44,15 @@
     line-height: 50px;
     background-color: var(--high-contrast-light);
     color: var(--contrast-color-dull);
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.skillBox2{
+    height:50px;
+    line-height: 50px;
+    background-color: var(--high-contrast-light);
+    color: var(--accent-color);
     border-radius:5px;
     font-weight:bold;
 }
@@ -113,6 +122,10 @@
     background-color: var(--contrast-color-dull);
 }
 
+.colorRow2{
+    background-color: var(--accent-color);
+}
+
 .aboutMeStyle{
     color:var(--high-contrast-dark);
 }
@@ -149,4 +162,10 @@
 
 .bubbleTitle{
     color:var(--high-contrast-light);
+}
+
+.finalText{
+    color:var(--accent-color);
+    font-size: 20px;
+    text-align: center;
 }

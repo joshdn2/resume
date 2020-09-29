@@ -3,18 +3,16 @@ import './NotSidebar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import profPic from "../media/DannemanJoshua_Online.jpg"
 import namePic from "../media/picresume.png"
-import timelinePoint from "../media/timelinePoint.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
 import email from '../media/email.png'
 import mozenda from '../media/mozenda.png'
-import experienceText from '../media/experienceText.png'
-import experienceTextLeft from '../media/experienceTextleft.png'
 import phone from '../media/phone.png'
 import linkedin from '../media/linkedin.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
+import Fade from 'react-reveal/Fade'
 
 export default function NotSidebar({scrollPoint}) {
 
@@ -29,6 +27,7 @@ export default function NotSidebar({scrollPoint}) {
     return(
         <Container className='fullContainer'>
             <Row className="headerSpace" id='introduction'></Row>
+            <Fade right>
             <Row>
                 <Col md={1}></Col>
                 <Col md={6}className="headers">
@@ -60,6 +59,8 @@ export default function NotSidebar({scrollPoint}) {
                 </Col>
                 <Col md={1}></Col>
             </Row>
+            </Fade>
+            <Fade right>
             <br/>
             <Row>
                 <Col md={1}></Col>
@@ -76,8 +77,10 @@ export default function NotSidebar({scrollPoint}) {
                 </Col>
                 <Col md={2}></Col>
             </Row>
+            </Fade>
             <br/><br/><br/><br/><br/>
             <Row><hr className="lineBreak"/></Row>
+            <Fade right>
             <br id="about"/><br/><br/>
             <Row>
                 {/* this one has another picture and the about me section */}
@@ -100,11 +103,11 @@ export default function NotSidebar({scrollPoint}) {
                         I am currently working as a full-stack software developer and UX researcher in the BYU Physics and Astronomy department. 
                         <br/><br/>
                         My motto: Do good recklessly.
+                        <br/>
                     </p>
                 </Col>
                 <Col md={1}></Col>
-            </Row>
-            
+            </Row>            
             <Row className='colorRow'>
                 {/* This is the section with a few highlighted skills */}
                 <Col><br/>
@@ -114,7 +117,7 @@ export default function NotSidebar({scrollPoint}) {
                     <br/>
                     <Row>
                         <Col md={2}></Col>
-                        <Col md={2} className='centerTitle'><div className='skillBox'>ReactJS</div></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>React</div></Col>
                         <Col md={1}></Col>
                         <Col md={2} className='centerTitle'><div className='skillBox'>Database Design</div></Col>
                         <Col md={1}></Col>
@@ -128,13 +131,64 @@ export default function NotSidebar({scrollPoint}) {
                         <Col md={1}></Col>
                         <Col md={2} className='centerTitle'><div className='skillBox'>Agile</div></Col>
                         <Col md={1}></Col>
-                        <Col md={2} className='centerTitle'><div className='skillBox'>Node.js</div></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>Node</div></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>Excel</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>JavaScript</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox'>Mozenda</div></Col>
                         <Col md={2}></Col>
                     </Row>
                     <br/>
                     <br/>
                 </Col>
             </Row>
+            <Row className='colorRow2'>
+                {/* This is the section with a few more highlighted skills */}
+                <Col><br/>
+                    <Row className="justify-content-md-center">
+                        <Col md={3} className='centerTitle'><h2 className="nameSubTitle"><strong>Other Skills</strong></h2></Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Docker</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Git</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Analytics</div></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Pen Testing</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Risk Assessment</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Statistics</div></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Portuguese</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Piano</div></Col>
+                        <Col md={1}></Col>
+                        <Col md={2} className='centerTitle'><div className='skillBox2'>Ballroom Dance</div></Col>
+                        <Col md={2}></Col>
+                    </Row>
+                    <br/>
+                    <br/>
+                </Col>
+            </Row>
+            </Fade>
             <br/>
             <Row>
                 <Col>
@@ -154,7 +208,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="April 2018 - August 2020"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        iconStyle={{ background: '#FF5621', color: '#fff'}}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Mozenda</h3>
@@ -182,7 +236,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="August 2019 - April 2020"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        iconStyle={{ background: '#002E5D', color: '#fff'}}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Information Systems Core</h3>
@@ -214,7 +268,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="April 2020 - Present"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        iconStyle={{ background: '#EEEEEE', color: '#fff' }}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Physics and Astronomy Department</h3>
@@ -243,7 +297,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="August 2020 - Present"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#10449E', color: '#fff' }}
+                        iconStyle={{ background: '#002E5D', color: '#fff' }}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Master's of Information Systems Management</h3>
@@ -267,9 +321,9 @@ export default function NotSidebar({scrollPoint}) {
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </Row>
-            <br/><br/><br/><br/>
-            <Row><hr className="lineBreak"/></Row>
             <br/><br/>
+            <br/><br/>
+            <Fade right>
             <Row>
                 <Col>
                     {/* this section is for the Contact Me section */}
@@ -286,8 +340,10 @@ export default function NotSidebar({scrollPoint}) {
                     <Row>
                         <Col md={2}></Col>
                         <Col md={2} className='centerTitle'>
-                            <img src={email} className='contactIcon'/>
-                            <div className='contactText'><strong>joshdn2@gmail.com</strong></div>
+                            <a href="mailto:joshdn2@gmail.com" >
+                                <img src={email} className='contactIcon'/>
+                                <div className='contactText'><strong>joshdn2@gmail.com</strong></div>
+                            </a>
                         </Col>
                         <Col md={1}></Col>
                         <Col md={2} className='centerTitle'>
@@ -301,7 +357,13 @@ export default function NotSidebar({scrollPoint}) {
                     <br/><br/><br/>
                 </Col>
             </Row>
-            <br/>
+            <br/><br/><br/>
+            <Row>
+                <Col md={1}></Col>
+                <Col md={10} className="finalText">Well, you've made it to the end. I thank you for your time and hope to hear from you soon!</Col>
+                <Col md={1}></Col>
+            </Row>
+            <br/><br/>
             <Row>
                 <Col>
                     <h3 className="nameTitleMotto" style={{textAlign:'center', marginBottom:'30px'}}>
@@ -309,6 +371,7 @@ export default function NotSidebar({scrollPoint}) {
                     </h3>
                 </Col>
             </Row>
+            </Fade>
         </Container>
     )
 }
