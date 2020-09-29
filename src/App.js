@@ -1,16 +1,10 @@
-import React, {useState} from 'react'
-import logo from './logo.svg'
+import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {Container, Row, Col, Button} from 'react-bootstrap'
 import myLogo from "./media/logopic.png"
 import NotSidebar from "./NotSidebar/NotSidebar"
-import { HelpBlock } from 'react-bootstrap'
-import { directive } from '@babel/types'
-import { HashLink as Link } from 'react-router-hash-link'
 
 export default function App() {
-  const [anchorTarget, setAnchorTarget] = useState(null)
 
   let arrLinks = [
     {name:'INTRODUCTION', link:'introduction'},
@@ -31,7 +25,7 @@ let widthTest = false
   return (
     <div className='backgroundColor'>
       <div className={widthTest? "sidebarSmall" : "sidebar"}>
-        <img src={myLogo} className={widthTest? "logopicSmall" : "logopic"} onClick={() => scrollPoint('introduction')}/>
+        <img alt='logo' src={myLogo} className={widthTest? "logopicSmall" : "logopic"} onClick={() => scrollPoint('introduction')}/>
         {!widthTest && arrLinks.map((l) => {
           return (
             <div className="linkSection" onClick={() => scrollPoint(l.link)}>
