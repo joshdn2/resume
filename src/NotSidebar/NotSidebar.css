@@ -12,13 +12,7 @@
 
 .profilepic{
     width:100%;
-}
-
-.bracket{
-    margin-top:-45px;
-    height:200px;
-    line-height:200px;
-    font-size:180px;
+    border-radius: 5px;
 }
 
 .nameSubTitle{
@@ -63,6 +57,14 @@
     font-size:50px;
     margin-top:12px;
     color: var(--accent-color);
+}
+
+.nameTitleExp{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:50px;
+    margin-top:12px;
+    color: var(--contrast-color-dull);
 }
 
 .nameTitleMotto{
@@ -128,32 +130,6 @@
 
 .aboutMeStyle{
     color:var(--high-contrast-dark);
-}
-
-.centerTitleLeft{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: right;
-    color:var(--high-contrast-dark);
-}
-
-.centerTitleRight{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: left;
-    color:var(--high-contrast-dark);
-}
-
-.experienceTextBubble{
-    padding-left:0px;
-    padding-right:0px;
-    width:100%;
-}
-
-.centertimeline{
-    padding-left:0px;
-    padding-right:0px;
-    height:100%;
 }
 
 .timelineDate{

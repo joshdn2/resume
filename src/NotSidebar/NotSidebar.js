@@ -6,7 +6,6 @@ import namePic from "../media/picresume.png"
 import resume from "../media/Josh_Danneman_Resume.pdf"
 import blackWhite from '../media/suitNoBackground.png'
 import email from '../media/email.png'
-import mozenda from '../media/mozenda.png'
 import phone from '../media/phone.png'
 import linkedin from '../media/linkedin.png'
 import {Container, Row, Col, Button} from 'react-bootstrap'
@@ -15,14 +14,6 @@ import 'react-vertical-timeline-component/style.min.css'
 import Fade from 'react-reveal/Fade'
 
 export default function NotSidebar({scrollPoint}) {
-
-    let arrSkills = [
-        'ReactJS','UX Research','Database Design','Node.js','Systems Analysis','SQL'
-    ]
-
-
-    let widthTest = false
-    if(window.innerWidth < 1048) widthTest = true
 
     return(
         <Container className='fullContainer'>
@@ -34,9 +25,6 @@ export default function NotSidebar({scrollPoint}) {
                     <h3 style={{marginTop:"20px"}}>Hello, I'm </h3>
                     <Row>
                         <img src={namePic} className="namePic"></img>
-                        {/* <Col>{ !widthTest && <div className="bracket">[</div>}</Col>
-                        <h1 className="nameTitle"><strong>Josh<br/> Danneman</strong></h1>
-                        <Col>{ !widthTest && <div className="bracket">]</div>}</Col> */}
                     </Row>
                     <br/>
                     <hr className='lineBreakTop'/>
@@ -48,11 +36,6 @@ export default function NotSidebar({scrollPoint}) {
                         <Col md={2}></Col>
                     </Row>
                     <hr className='lineBreakBottom'/>
-                    {/* <h5>I'm a full-stack developer and UX designer and researcher in the making. </h5>
-                    <h5>
-                        I will graduate from the Brigham Young University Marriott School of Management in December 2021 with 
-                        a Master's degree in Information Systems Management, with an emphasis in Software Development. 
-                    </h5> */}
                 </Col>
                 <Col md={4}>
                     <img className="profilepic" src={profPic}/>
@@ -73,7 +56,7 @@ export default function NotSidebar({scrollPoint}) {
                 </Col>
                 <Col md={2}></Col>
                 <Col md={3}>
-                    <Button className="resumeReadButton" onClick={() => scrollPoint('about')}>Read More (mobile version coming soon)</Button>
+                    <Button className="resumeReadButton" onClick={() => scrollPoint('about')}>Read More</Button>
                 </Col>
                 <Col md={2}></Col>
             </Row>
@@ -193,7 +176,7 @@ export default function NotSidebar({scrollPoint}) {
             <Row>
                 <Col>
                     {/* this section is for the Experience timeline */}
-                    <h1 id='experience' className="nameTitle" style={{textAlign:'center', marginBottom:'30px'}}>
+                    <h1 id='experience' className="nameTitleExp" style={{textAlign:'center', marginBottom:'30px'}}>
                         <br/>
                         <strong>Experience</strong>
                     </h1>
@@ -208,7 +191,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="April 2018 - August 2020"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#FF5621', color: '#fff'}}
+                        iconStyle={{ background: '#01A263', color: '#fff'}}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Mozenda</h3>
@@ -236,7 +219,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="August 2019 - April 2020"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#002E5D', color: '#fff'}}
+                        iconStyle={{ background: '#10449E', color: '#fff'}}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Information Systems Core</h3>
@@ -268,7 +251,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="April 2020 - Present"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#EEEEEE', color: '#fff' }}
+                        iconStyle={{ background: '#01A263', color: '#fff' }}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Physics and Astronomy Department</h3>
@@ -297,7 +280,7 @@ export default function NotSidebar({scrollPoint}) {
                         contentArrowStyle={{ borderRight: '7px solid  #10449E' }}
                         date="August 2020 - Present"
                         dateClassName="timelineDate"
-                        iconStyle={{ background: '#002E5D', color: '#fff' }}
+                        iconStyle={{ background: '#10449E', color: '#fff' }}
                         icon=""
                     >
                         <h3 className="vertical-timeline-element-title bubbleTitle">Master's of Information Systems Management</h3>
@@ -317,6 +300,9 @@ export default function NotSidebar({scrollPoint}) {
                             Capstone Project: 
                             <br/>
                             - Productivity Management for software developers
+                            <br/>
+                            <br/>
+                            Member of the Association for Information Systems and the BYU Developers Club
                         </p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
