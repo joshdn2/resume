@@ -24,7 +24,7 @@ export default function NotSidebar({scrollPoint}) {
                 <Col md={6}className="headers">
                     <h3 style={{marginTop:"20px"}}>Hello, I'm </h3>
                     <Row>
-                        <img src={namePic} className="namePic"></img>
+                        <img alt='myname' src={namePic} className="namePic"></img>
                     </Row>
                     <br/>
                     <hr className='lineBreakTop'/>
@@ -38,7 +38,7 @@ export default function NotSidebar({scrollPoint}) {
                     <hr className='lineBreakBottom'/>
                 </Col>
                 <Col md={4}>
-                    <img className="profilepic" src={profPic}/>
+                    <img alt='profpic' className="profilepic" src={profPic}/>
                 </Col>
                 <Col md={1}></Col>
             </Row>
@@ -69,7 +69,7 @@ export default function NotSidebar({scrollPoint}) {
                 {/* this one has another picture and the about me section */}
                 <Col md={1}></Col>
                 <Col md={4} className='suitPicWrapper'>
-                    <img src={blackWhite} className='suitPic'/>
+                    <img alt='suitpic' src={blackWhite} className='suitPic'/>
                 </Col>
                 {/* <Col md={1}></Col> */}
                 <Col md={6}>
@@ -327,17 +327,17 @@ export default function NotSidebar({scrollPoint}) {
                         <Col md={2}></Col>
                         <Col md={2} className='centerTitle'>
                             <a href="mailto:joshdn2@gmail.com" >
-                                <img src={email} className='contactIcon'/>
+                                <img alt='emailicon' src={email} className='contactIcon'/>
                                 <div className='contactText'><strong>joshdn2@gmail.com</strong></div>
                             </a>
                         </Col>
                         <Col md={1}></Col>
                         <Col md={2} className='centerTitle'>
-                            <img src={phone} className='contactIcon'/>
+                            <img alt='phoneicon' src={phone} className='contactIcon'/>
                             <div className='contactText'><strong>770-943-8344</strong></div>
                         </Col>
                         <Col md={1}></Col>
-                        <Col md={2} className='centerTitle'><a href='https://www.linkedin.com/in/josh-danneman/' target="_blank"><img src={linkedin} className='contactIcon'/></a></Col>
+                        <Col md={2} className='centerTitle'><a href='https://www.linkedin.com/in/josh-danneman/' target="_blank" rel='noopener noreferrer'><img alt='linkedin' src={linkedin} className='contactIcon'/></a></Col>
                         <Col md={2}></Col>
                     </Row>
                     <br/><br/><br/>
